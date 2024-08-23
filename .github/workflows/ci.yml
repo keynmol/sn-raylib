@@ -36,7 +36,7 @@ jobs:
             echo "It's a Linux"
             wget https://apt.llvm.org/llvm.sh
             chmod +x llvm.sh
-            ./llvm.sh 17
+            sudo ./llvm.sh 17
           fi
 
           git submodule update --init && cd raylib/src && make PLATFORM=PLATFORM_DESKTOP
