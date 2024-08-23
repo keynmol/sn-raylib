@@ -16,7 +16,7 @@ import scala.scalanative.unsigned.*
     c"hello raylib from Scala Native"
   )
 
-  Zone { implicit z =>
+  Zone:
 
     val WHITE = Color(255.toUByte, 255.toUByte, 255.toUByte, 255.toUByte)
     val GREEN = Color(0.toUByte, 255.toUByte, 0.toUByte, 255.toUByte)
@@ -56,5 +56,4 @@ import scala.scalanative.unsigned.*
       EndDrawing()
     end while
     CloseWindow()
-  }
 end hello_raylib
